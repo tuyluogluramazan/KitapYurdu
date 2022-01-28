@@ -7,9 +7,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-import static com.kitapyurdu.Constants.Constants.POINT_PAGE_LOCATER;
-import static com.kitapyurdu.Constants.Constants.TURK_KLASIKLERI_LOCATER;
+import static com.kitapyurdu.Constants.Constants.*;
 
 public class ProductPage {
     WebDriver driver;
