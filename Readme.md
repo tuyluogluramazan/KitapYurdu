@@ -14,8 +14,7 @@ Merhaba bu projede Java dilinde Maven Page Object Model yapısıyla Selenium kü
 | :--------------------------- | ---------- |
 | Java(OOP) & POM              | Junit      |
 | Maven                        | Log4j      |
-|                              | Bonigarcia |
-
+| IntelliJ IDEA                | Bonigarcia |
 #### Test Senaryosu:
 
 - Kitapyurdu Anasayfa açılır
