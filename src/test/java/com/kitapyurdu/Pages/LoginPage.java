@@ -20,7 +20,7 @@ public class LoginPage {
         methods.sendKeys(By.id("login-email"), "testhesabi211@gmail.com");
         methods.sendKeys(By.id("login-password"), "Test123.");
         methods.sendKeysEnter(By.id("login-password"));
-        methods.wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".common-sprite > b")));
+        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".common-sprite > b")));
         String actual = methods.getText(By.cssSelector(".common-sprite > b"));
         methods.assertPage("Hesaba giriş Yapılmadı", "deneme hesabi", actual);
         logger.info("Hesaba giriş yapıldı " + actual);

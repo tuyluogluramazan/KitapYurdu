@@ -35,9 +35,9 @@ public class ProductPage {
     }
 
     public void addToBasket() {
-        methods.wait.until(ExpectedConditions.elementToBeClickable(By.xpath(("//div[@class='product-cr']//img"))));
+        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath(("//div[@class='product-cr']//img"))));
         methods.selectRandomProduct();
-        methods.wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[.='Sepete Ekle']")));
+        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='Sepete Ekle']")));
         methods.click(By.xpath("//span[.='Sepete Ekle']"));
     }
 }

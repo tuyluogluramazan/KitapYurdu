@@ -21,7 +21,7 @@ public class HomePage {
     }
 
     public void switchPage() {
-        methods.wait.until(ExpectedConditions.elementToBeClickable(HOME_PAGE_LOCATER));
+        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(HOME_PAGE_LOCATER));
         methods.switchPage(HOME_PAGE_LOCATER);
     }
 
