@@ -12,7 +12,7 @@ Merhaba bu projede Java dilinde Maven Page Object Model yapısıyla Selenium kü
 
 | Programlama dili & Teknoloji | Kütüphane  |
 | :--------------------------- | ---------- |
-| Java(OOB) & POM              | Junit      |
+| Java(OOP) & POM              | Junit      |
 | Maven                        | Log4j      |
 |                              | Bonigarcia |
 
