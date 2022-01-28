@@ -32,9 +32,9 @@ public class FavoritePage {
     }
 
     public void assertFavoritePage() {
-        methods.waitBySeconds(3);
-        String actualValue = methods.getText(By.cssSelector(".favorite-tag"));
-        String expectedValue = "etiketsiz\\\\n4";
+        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//span[.='4']")));
+        String actualValue = methods.getText(By.xpath("//span[.='4']"));
+        String expectedValue = "4";
         methods.assertPage("Ürün favorilere eklenmemiş", expectedValue, actualValue);
         logger.info("4 ürün favoriye eklendi " + actualValue);
     }
@@ -42,18 +42,15 @@ public class FavoritePage {
 
     public void addProductToFavorites() {
         for (int i = 2; i < 6; i++) {
-            methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@id='product-table']//a[@class='add-to-favorites'])["+i+"]")));
-            methods.click(By.xpath("(//div[@id='product-table']//a[@class='add-to-favorites'])["+i+"]"));
+                methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("(//div[@id='product-table']//a[@class='add-to-favorites'])["+i+"]")));
+                methods.click(By.xpath("(//div[@id='product-table']//a[@class='add-to-favorites'])["+i+"]"));
         }
     }
 
     public void favoriteProductDeleteByIndex() {
-        methods.wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".sprite.display-item")));
-        if (methods.iselementToBeClickable(By.cssSelector(".sprite.display-item"))) {
-            methods.click(By.xpath("//span[@class='sprite sprite-icon-list']"));
-        }
+        methods.wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector(".sprite.display-item")));
+        methods.click(By.xpath("//span[@class='sprite sprite-icon-list']"));
         methods.click(By.xpath("(//div[@class='product-list']//i[@class='fa fa-heart-o'])[3]"));
-        methods.waitBySeconds(2);
     }
 
 

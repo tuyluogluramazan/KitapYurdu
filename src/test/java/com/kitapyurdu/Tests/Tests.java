@@ -15,27 +15,27 @@ public class Tests extends BaseTest {
         FavoritePage favoritePage = new FavoritePage();
 
         //Anasayfa kontrol
-        //homePage.assertHomePage();
+        homePage.assertHomePage();
         //Login işlemi
         loginPage.login();
         //Ürün arama
-        searchPage.searchProduct();
+    /*    searchPage.searchProduct();
         //Favorilere Ürün Ekleme
         favoritePage.addProductToFavorites();
         //Favoriler Sayfasına geçiş
-        //favoritePage.switchPage();
+        favoritePage.switchPage();
         //Favorilerim sayfası doğrulama
-        //favoritePage.assertFavoritePage();
+        favoritePage.assertFavoritePage();
         //Anasayfaya geçiş
-        //homePage.switchPage();
+        homePage.switchPage();
         //Ürün filtreleme
-        //productPage.selectFilter();
+        productPage.selectFilter();
         //Sepete Ürün Ekleme
-        //productPage.addToBasket();
-        //Favorilerim sayfasına geçiş
-        //favoritePage.switchPage();
+        productPage.addToBasket();
+        //Favorilerim sayfasına geçiş*/
+        favoritePage.switchPage();
         //Favoriler Sayfasından ürün silme
-        //favoritePage.favoriteProductDeleteByIndex();
+        favoritePage.favoriteProductDeleteByIndex();
         //Sepetim sayfasına geçiş
         //basketPage.switchBasketPage();
         //Ürün adeti arttırma
