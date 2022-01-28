@@ -4,7 +4,7 @@ Merhaba bu projede Java dilinde Maven Page Object Model yapısıyla Selenium kü
 
 #### **Uyarı:** 
 
-*Test aşamasında Login ekranında çok fazla tekrar yapınca Captcha doğrulaması yapılması gerekmektedir. Bu aşamayı kullanıcı kendi yapabilmektedir. Captcha doğrulaması ile karşılaşılırsa bu aşamayı manuel olarak geçmelisiniz.
+*Test sırasında Login ekranında çok fazla tekrar yapınca Captcha doğrulaması yapılması gerekmektedir. Bu aşamayı kullanıcı kendi yapabilmektedir. Captcha doğrulaması ile karşılaşılırsanız bu aşamayı manuel olarak geçmelisiniz.
 
 **Ürün satın almada doğrulama ekranı gelmektedir. Bu aşamayı da manuel olarak atlayabilirsiniz.
 
@@ -12,10 +12,9 @@ Merhaba bu projede Java dilinde Maven Page Object Model yapısıyla Selenium kü
 
 | Programlama dili & Teknoloji | Kütüphane  |
 | :--------------------------- | ---------- |
-| Java(OOB) & POM              | Junit      |
+| Java(OOP) & POM              | Junit      |
 | Maven                        | Log4j      |
-|                              | Bonigarcia |
-
+| IntelliJ IDEA                | Bonigarcia |
 #### Test Senaryosu:
 
 - Kitapyurdu Anasayfa açılır
